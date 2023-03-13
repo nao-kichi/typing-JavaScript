@@ -124,7 +124,6 @@ button:hover{
   opacity: 0.6;
 }
 }
-
 /* modeのタイトル */
 h1 {
   font-size: 40px;
@@ -132,4 +131,9 @@ h1 {
   color: #010101;/*文字色*/
   background: #c9ffda;/*背景色*/
   border-bottom: solid 3px #8fff82;/*下線*/
+}
+
+/* body全体の下に空白要素を追加する */
+body {
+  margin-bottom: 100px; /* 任意のサイズを指定 */
 }
