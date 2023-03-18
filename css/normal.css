@@ -19,7 +19,7 @@ h1 {
   background-color: #666;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .typed {
@@ -59,7 +59,7 @@ body {
 }
 
 body {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) { /* タブレット用 */
