@@ -1,133 +1,180 @@
 /* ネオンタイトル文字 */
 .neonText {
-  animation: flicker 1.5s infinite alternate;
-  color: #fff;
-  position: relative; /* 今の位置を基準 */
-top: -120px; /* 上から10px */
-left: 400px; /* 左から20px */
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    position: relative;
+    /* 今の位置を基準 */
+    top: -120px;
+    /* 上から10px */
+    left: 400px;
+    /* 左から20px */
 }
+
 @media screen and (max-width: 768px) {
     .neonText {
         animation: flicker 1.5s infinite alternate;
         color: #fff;
-        position: relative; /* 今の位置を基準 */
-      top: -120px; /* 上から10px */
-      left: 150px; /* 左から20px */
-      }
+        position: relative;
+        /* 今の位置を基準 */
+        top: -120px;
+        /* 上から10px */
+        left: 150px;
+        /* 左から20px */
+    }
 }
+
 /* NEWGAMESネオン */
 h1 {
-    font-size: 3.8rem;    
-  }
-  @media screen and (max-width: 768px) {
-    /* NEWGAMESネオン */
-    /* モバイル版 */
-    h1 {
-        font-size: 3.0rem;    
-      }
-    }
-    
+    font-size: 3.8rem;
+}
+
+/* NEWGAMESネオン /
+/ モバイル版 */
+h1 {
+    font-size: 3.0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -50%);
+}
+
 /* Flickering animation */
 @keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-      0 0 90px #0fa,
-      0 0 100px #0fa,
-      0 0 150px #0fa;
-  
-  }
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
-}
-@media screen and (max-width: 768px) {
-/* Flickering animation 消さないでね*/
-@keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
         text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
-    
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+
     }
-    20%, 24%, 55% {        
+
+    20%,
+    24%,
+    55% {
         text-shadow: none;
-    }    
-  }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Flickering animation 消さないでね*/
+    @keyframes flicker {
+
+        0%,
+        18%,
+        22%,
+        25%,
+        53%,
+        57%,
+        100% {
+
+            text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #0fa,
+                0 0 80px #0fa,
+                0 0 90px #0fa,
+                0 0 100px #0fa,
+                0 0 150px #0fa;
+
+        }
+
+        20%,
+        24%,
+        55% {
+            text-shadow: none;
+        }
+    }
 }
 
 
 /* Javascriptタイピングゲーム ネオン */
 /* Additional styling */
 h2 {
- font-size: 1.4rem;
+    font-size: 1.4rem;
 }
+
 @media screen and (max-width: 768px) {
+
     /* Javascriptタイピングゲーム ネオン */
     h2 {
         font-size: 1.0rem;
-       }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(5%, -50%);
     }
-    
-.container {
-  margin-top: 20vh;
 }
-        
+
+/*  */
+.container {
+    margin-top: 20vh;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         margin-top: 20vh;
-      }
     }
-body {
-  font-size: 18px;
-  font-family: "Helvetica Neue", sans-serif;
-  background-color: #010a01;
-}  
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 18px;
-        font-family: "Helvetica Neue", sans-serif;
-        background-color: #010a01;
-      }  
-    }
+}
 
-h1, h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
+/* 各難易度の設定ボタン */
+body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
 }
 
 @media screen and (max-width: 768px) {
-    h1, h2 {
+    body {
+        font-family: "Helvetica Neue", sans-serif;
+        background-color: #010a01;
+        text-align: center;
+    }
+}
+
+/*  */
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1,
+    h2 {
         text-align: center;
         text-transform: uppercase;
         font-weight: 400;
-      }
     }
+}
 
 
 /* 以下MODE選択のボタンとなる */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +183,8 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
-a{
+
+a {
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -154,7 +202,7 @@ a{
 
 /* モバイル版 */
 @media screen and (max-width: 768px) {
-    a{
+    a {
         position: relative;
         display: inline-block;
         padding: 25px 30px;
@@ -170,90 +218,109 @@ a{
         left: -180px;
     }
 }
-a:hover{
+
+a:hover {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-a:nth-child(1){
+
+a:nth-child(1) {
     filter: hue-rotate(270deg);
 }
-a:nth-child(2){
+
+a:nth-child(2) {
     filter: hue-rotate(110deg);
 }
-a span{
+
+a span {
     position: absolute;
     display: block;
 }
-a span:nth-child(1){
+
+a span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
+    background: linear-gradient(90deg, transparent, #03e9f4);
     animation: animate1 1s linear infinite;
 }
-@keyframes animate1{
-    0%{
+
+@keyframes animate1 {
+    0% {
         left: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         left: 100%;
     }
 }
-a span:nth-child(2){
+
+a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#03e9f4);
+    background: linear-gradient(180deg, transparent, #03e9f4);
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
-@keyframes animate2{
-    0%{
+
+@keyframes animate2 {
+    0% {
         top: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         top: 100%;
     }
 }
-a span:nth-child(3){
+
+a span:nth-child(3) {
     bottom: 0;
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#03e9f4);
+    background: linear-gradient(270deg, transparent, #03e9f4);
     animation: animate3 1s linear infinite;
     animation-delay: 0.50s;
 }
-@keyframes animate3{
-    0%{
+
+@keyframes animate3 {
+    0% {
         right: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         right: 100%;
     }
 }
 
-a span:nth-child(4){
+a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#03e9f4);
+    background: linear-gradient(360deg, transparent, #03e9f4);
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
-@keyframes animate4{
-    0%{
+
+@keyframes animate4 {
+    0% {
         bottom: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         bottom: 100%;
     }
 }
