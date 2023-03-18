@@ -1,139 +1,99 @@
-/* 初期画面に戻る */
-.btn{
-  width: 180px;
-  padding: 14px 0 16px 0;
-  font-size: 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  color: #fff;
-  background: #444;
-  line-height: 1;
-  border-radius: 50px;
-  transition: all .2s;
-  top: 850px;
-  left: 150px;
-}
-.btn:hover{
-  opacity: 0.6;
-}
-@media screen and (max-width: 768px) {
-  .btn{
-    width: 180px;
-    padding: 14px 0 16px 0;
-    font-size: 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin: 0 auto;
-    color: #fff;
-    background: #444;
-    line-height: 1;
-    border-radius: 50px;
-    transition: all .2s;
-    top: 615px;
-    left: 120px;
-  }
-  .btn:hover{
-    opacity: 0.6;
-  }
+/* デスクトップ用のスタイル */
+h1 {
+  font-size: 40px;
+  padding: 0.5em;
+  color: #fefffe;
+  background: #666;
+  border-bottom: solid 3px #fefffe;
 }
 
-/* タイピング 文字サイズ */
-body {
-  font-size: 4em; 
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-/* 文字サイズ */
-body {
-  font-size: 2em; 
-  text-align: center;
-}
-}
-/* カウント */
 .count {
   margin: 0;
   font-weight: bold;
-  color: #888;
+  color: #666;
 }
 
-/* 最初の背景 スタートボタンで開始 */
 .wrap {
   margin-top: 20px;
-  padding: 80px 40px;
+  padding: 100px 60px;
   background-color: #666;
   font-weight: bold;
   color: #fff;
+  margin-bottom: 150px;
 }
 
-/* 入力済みの文字色 */
 .typed {
-  color: lightgreen;
+  color: rgb(0, 0, 0);
 }
 
-/* ミスをした時の反応 */
 .mistyped {
   background-color: red;
 }
 
-/* スタート　ボタン */
-button {
-  width: 209px;
-  padding: 14px 0 16px 0;
-  font-size: 16px;
-  position: relative;
+.button-container button,
+.button-container a button {
+  background-color: #666;
+  border: none;
+  color: white;
+  padding: 20px  40px;
   text-align: center;
   text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  color: #fff;
-  background: #444;
-  line-height: 1;
-  border-radius: 50px;
-  transition: all .2s;
-  top: 220px;
-  left: -150px;
-}
-button:hover{
-  opacity: 0.6;
-}
-@media screen and (max-width: 768px) {
-/* スタート　ボタン */
-button {
-  width: 180px;
-  padding: 14px 0 16px 0;
+  display: inline-block;
   font-size: 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  color: #fff;
-  background: #444;
-  line-height: 1;
-  border-radius: 50px;
-  transition: all .2s;
-  top: 120px;
-  left: -120px;
-}
-button:hover{
-  opacity: 0.6;
-}
-}
-/* modeのタイトル */
-h1 {
-  font-size: 40px;
-  padding: 0.5em;/*文字周りの余白*/
-  color: #010101;/*文字色*/
-  background: #c9ffda;/*背景色*/
-  border-bottom: solid 3px #8fff82;/*下線*/
+  margin: 0px 50px 0px 50px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-/* body全体の下に空白要素を追加する */
+.button-container button:hover,
+.button-container a button:hover {
+  background-color: #333;
+}
+
 body {
-  margin-bottom: 100px; /* 任意のサイズを指定 */
+  background-color: black;
+  font-size: 4em; 
+  text-align: center;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+/* タブレット用のスタイル */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  .count {
+    font-size: 24px;
+  }
+  .wrap {
+    padding: 50px 30px;
+  }
+  .button-container button,
+  .button-container a button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+/* スマートフォン用のスタイル */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  .count {
+    font-size: 18px;
+  }
+  .wrap {
+    padding: 30px 20px;
+  }
+  .button-container button,
+  .button-container a button {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 0px 10px 0px 10px;
+  }
 }

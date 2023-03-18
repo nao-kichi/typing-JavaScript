@@ -119,16 +119,9 @@ const timer = () => {
 
 // ゲームスタート時の処理
 start.addEventListener('click', () => {
-
-  // カウントダウンタイマーを開始する
-  timer();
-
-  // ランダムなテキストを表示する
-  createText();
-
-  // 「スタート」ボタンを非表示にする
-  start.style.display = 'none';
-
+  timer(); // タイマ開始
+  createText(); // ランダムテキスト
+  start.style.display = 'none';  // 「スタート」ボタンを非表示にする
   // キーボードのイベント処理
   document.addEventListener('keypress', keyPress);
 });

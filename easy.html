@@ -3,14 +3,12 @@
 <head>
   <title>タイピングゲーム</title>
   <meta charset="UTF-8">
-  <meta name="description" content="【JavaScript応用編】簡易的なタイピングゲームです。">
+  <meta name="description" content="JavaScriptタイピングゲーム">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="./css/easy.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <!-- 初期画面に戻るボタン -->
-  <a href="index.html" class="btn">初期画面に戻る</a>
 
   <!-- ゲーム開始前のタイトル -->
 <h1>easy mode</h1>
@@ -21,11 +19,16 @@
   <!-- グレーの背景 -->
   <div id="wrap" class="wrap">
 
-    <span id="typed" class="typed"></span><span id="untyped"></span>
-  </div>
-  <!-- スタートボタン -->
-  <button id="start">スタート</button>
-  <div class="space"></div>
+    <!-- 入力チェック -->
+    <span id="typed" class="typed"></span><span id="untyped"></span></div>
+
+    <!-- ボタン群 -->
+    <div class="button-container">
+      <button id="start">スタート</button>
+      <a href="index.html"><button>初期画面に戻る</button></a>
+    </div>
+  
+  <!-- <div class="space"></div> -->
 
   <script type="text/javascript" src="./js/easy.js"></script>
 </body>
