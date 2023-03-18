@@ -21,13 +21,16 @@
 }
 @media screen and (max-width: 768px) {
   .btn{
+    vertical-align: top; /* 要素を上揃えにするために必要 */
+    width: 50%; /* 2つの要素を同じ幅にするために必要 */
+    background-color: #ccc; /* デモ用のスタイル */
     width: 180px;
     padding: 14px 0 16px 0;
     font-size: 16px;
     position: relative;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     color: #fff;
     background: #444;
@@ -82,13 +85,13 @@ body {
 
 /* スタート　ボタン */
 button {
+  display: table;
   width: 209px;
   padding: 14px 0 16px 0;
-  font-size: 16px;
+  font-size: 0; /* 子要素の空白を除去するために必要 */
   position: relative;
   text-align: center;
   text-decoration: none;
-  display: block;
   margin: 0 auto;
   color: #fff;
   background: #444;
@@ -142,6 +145,6 @@ body {
 @media screen and (max-width: 768px) {
 /* body全体の下に空白要素を追加する */
 body {
-  margin-bottom: 100px; /* 任意のサイズを指定 */
+  margin-bottom: 300px; /* 任意のサイズを指定 */
 }
 }

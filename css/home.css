@@ -26,8 +26,12 @@
 /* NEWGAMESネオン */
 h1 {
     font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+@media screen and (max-width: 768px) {
 /* NEWGAMESネオン /
 / モバイル版 */
 h1 {
@@ -36,6 +40,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(5%, -50%);
+}
 }
 
 /* Flickering animation */
@@ -106,6 +111,9 @@ h1 {
 /* Additional styling */
 h2 {
     font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,6 +144,9 @@ body {
     font-size: 18px;
     font-family: "Helvetica Neue", sans-serif;
     background-color: #010a01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -143,6 +154,9 @@ body {
         font-family: "Helvetica Neue", sans-serif;
         background-color: #010a01;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
