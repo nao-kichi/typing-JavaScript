@@ -35,7 +35,7 @@ h1 {
   background-color: #666;
   border: none;
   color: white;
-  padding: 15px  30px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -54,46 +54,57 @@ h1 {
 
 body {
   background-color: black;
-  font-size: 2.5em; 
+  font-size: 2.5em;
   text-align: center;
-}
-
-body {
   margin-bottom: 60px;
 }
 
-@media screen and (max-width: 768px) { /* タブレット用 */
+@media screen and (max-width: 768px) {
+  /* タブレット用 */
+
+  body {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
   h1 {
-  font-size: 24px;
+    font-size: 24px;
   }
-  
+
   .wrap {
-  padding: 50px 30px;
-  margin-bottom: 80px;
+    padding: 50px 30px;
+    margin-bottom: 80px;
   }
-  
+
   .button-container button,
   .button-container a button {
-  padding: 10px 20px;
-  font-size: 14px;
-  margin: 0px 20px 0px 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 0px 20px 0px 20px;
   }
+}
+
+@media screen and (max-width: 414px) {
+  /* iPhone用 */
+
+  body {
+    font-size: 1.0em;
+    margin-bottom: 20px;
   }
-  
-  @media screen and (max-width: 414px) { /* iPhone用 */
+
   h1 {
-  font-size: 20px;
+    font-size: 24px;
   }
-  
+
   .wrap {
-  padding: 30px 20px;
-  margin-bottom: 40px;
+    padding: 30px 20px;
+    margin-bottom: 40px;
   }
-  
+
   .button-container button,
   .button-container a button {
-  padding: 8px 16px;
-  font-size: 12px;
-  margin: 0px 10px 0px 10px;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin: 0px 10px 0px 10px;
   }
-  }
+}
