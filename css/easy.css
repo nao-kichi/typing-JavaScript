@@ -82,7 +82,7 @@ body {
   
   @media screen and (max-width: 414px) { /* iPhone用 */
   h1 {
-  font-size: 20px;
+  font-size: 24px;
   }
   
   .wrap {
